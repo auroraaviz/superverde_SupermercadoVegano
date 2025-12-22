@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html lang = "es">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    
+    <title> Super Verde - Supermercado Online </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+
+    <div id = "top"> </div> 
+
+    <!-- HEADER --> 
+    <header id = "top">
+        <div class = "header-container">
+            <nav>
+                <ul>
+                    <li><a href = "#alimentacion"> Alimentación </a></li>
+                    <li><a href = "#bebidas"> Bebidas </a></li>
+                    <li><a href = "#higiene"> Higiene </a></li>
+                    <li><a href = "#cosmetica"> Cosmética </a></li>
+                    <li><a href = "#contacto"> Contacto </a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>    
+
+    <main> 
+    
+    <div class="logo-central">
+        <img src = "imagenes/logo.png" alt = "Logo Super verde" class = "logo" loading = "lazy">
+    </div>
+
+
+    <div id="mini-carrito">
+        <span id="contador">0</span>
+            🛒
+        <div id="carrito-detalle" class="oculto"></div>
+    </div>
+
+
+      <!--BANNER-->
+    <section class = "banner">
+        <img src = "imagenes/banner ofertas.png" alt = "Ofertas semanales" loading = "lazy">
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS -->
+     <section class = "destacados">
+        <h2> 
+            <img src="imagenes/iconos/destacados.svg" alt="Destacados" class="icono-categoria">
+            Productos destacados 
+            <img src="imagenes/iconos/destacados.svg" alt="Destacados" class="icono-categoria">
+        </h2>
+
+        <div class = "destacados-grid">
+
+            <article class = "producto destacado">
+                <img src = "imagenes/productos/destacado1.jpg" alt = "Sazonador sabor Bacon Cheese" loading = "lazy">
+                <h3> Sazonador sabor Bacon Cheese </h3>
+                <p class="precio">
+                    <span class="precio-antes">2,30 €</span>
+                    <span class="precio-actual">1,80 €</span>
+                </p>
+                <button class="btn-agregar" data-nombre="Sazonador Bacon Cheese" data-precio="1.80">
+                    Añadir al carrito
+                </button>
+                <a href = "producto.html" class = "btn" > Ver producto </a>
+            </article>
+
+            <article class = "producto destacado">
+                <img src = "imagenes/productos/destacado2.jpg" alt = "Matcha sabor maracuyá y açai" loading = "lazy">
+                <h3> Matcha sabor maracuyá y açai </h3>
+                <p class="precio">
+                    <span class="precio-antes">3,10 €</span>
+                    <span class="precio-actual">2,50 €</span>
+                </p>
+                <button class="btn-agregar" data-nombre="Matcha sabor maracuyá y açai" data-precio="2.50">
+                    Añadir al carrito
+                </button>
+                <a href = "producto2.html" class = "btn" > Ver producto </a>
+            </article>
+
+        </div>
+
+         <a href = "#top" class = "volver-inicio"> Volver al inicio </a>
+
+     </section>
+
+     <!-- ALIMENTACIÓN -->
+     <section id = "alimentacion" class = "categoria">
+        
+        <h2> 
+            <img src="imagenes/iconos/alimentacion.svg" alt="Alimentación" class="icono-categoria">
+            Alimentación
+        </h2>
+
+        <div class="video-container">
+            <video src = "imagenes/food.mp4"  autoplay muted loop playsinline> </video>
+        </div>
+        
+        <div class = "productos-grid">
+
+            <article class = "producto">
+                <img src = "imagenes/productos/aliment.jpg" alt = "Carne vegana">
+                <h3> Carne vegana </h3>
+                <p class = "precio"> 2,90 € </p>
+                <button class="btn-agregar" data-nombre="Carne vegana" data-precio="2.90">
+                    Añadir al carrito
+                </button>
+            </article>
+
+            <article class = "producto">
+                <img src = "imagenes/productos/aliment2.jpg" alt = "Tikka kebabs">
+                <h3> Tikka kebabs </h3>
+                <p class = "precio"> 3,20 € </p>
+                <button class="btn-agregar" data-nombre="Tikka kebabs" data-precio="3.20">
+                    Añadir al carrito
+                </button>
+            </article>
+
+            <article class = "producto">
+                <img src = "imagenes/productos/aliment3.jpg" alt = "Queso picante">
+                <h3> Queso vegano semicurado y picante </h3>
+                <p class = "precio" > 3,50 € </p>
+                <button class="btn-agregar" data-nombre="Queso vegano semicurado y picante" data-precio="3.50">
+                    Añadir al carrito
+                </button>
+            </article>
+
+            <article class = "producto">
+                <img src = "imagenes/productos/aliment4.jpg" alt = "Embutido vegano">
+                <h3> Embutido vegano </h3>
+                <p class = "precio" > 1,60 €</p>
+                <button class="btn-agregar" data-nombre="Embutido vegano" data-precio="1.60">
+                    Añadir al carrito
+                </button>
+            </article>
+
+            <article class = "producto">
+                <img src = "imagenes/productos/aliment5.jpg" alt = "Chips veganos">
+                <h3> Chips veganos </h3>
+                <p class = "precio" > 1,30 €</p>
+                <button class="btn-agregar" data-nombre="Chips veganos" data-precio="1.30">
+                    Añadir al carrito
+                </button>
+            </article>
+
+        </div>
+        <a href = "#top" class = "volver-inicio"> Volver al inicio </a>
+     </section>
+    
+     <!-- BEBIDAS -->
+     <section id = "bebidas" class = "categoria">
+        <h2> 
+            <img src="imagenes/iconos/bebidas.svg" alt="Bebidas" class="icono-categoria">
+            Bebidas 
+        </h2>
+
+        <div class="video-container">
+            <video src = "imagenes/DRINKS.mp4" autoplay muted loop playsinline> </video>
+        </div> 
+
+        <div class="productos-grid">
+
+            <article class = "producto">
+                <img src = "imagenes/productos/bebidas.jpg" alt = "Kombucha">
+                <h3>Kombucha</h3>
+                <p class = "precio" > 1,30 € </p>
+                <button class="btn-agregar" data-nombre="Kombucha" data-precio="1.30">
+                    Añadir al carrito
+                </button>
+            </article>
+
+            <article class = "producto">
+                <img src = "imagenes/productos/bebidas2.jpg" alt = "Iced coffee">
+                <h3>Iced coffee Avena</h3>
+                <p class = "precio" > 1,20 € </p>
+                 <button class="btn-agregar" data-nombre="Iced coffee Avena" data-precio="1.20">
+                    Añadir al carrito
+                </button>
+            </article>
+
+             <article class = "producto">
+                <img src = "imagenes/productos/bebidas3.jpg" alt = "Limonada">
+                <h3>Limonada</h3>
+                <p class = "precio" > 1,00 € </p>
+                 <button class="btn-agregar" data-nombre="Limonada" data-precio="1.00">
+                    Añadir al carrito
+                </button>
+            </article>
+
+            <article class = "producto">
+                <img src = "imagenes/productos/bebidas4.jpg" alt = "Zumo Granada">
+                <h3>Zumo de granada</h3>
+                <p class = "precio" > 1,30 € </p>
+                <button class="btn-agregar" data-nombre="Zumo de granada" data-precio="1.30">
+                    Añadir al carrito
+                </button>
+            </article>
+
+             <article class = "producto">
+                <img src = "imagenes/productos/bebidas5.jpg" alt = "Zumo Manzana">
+                <h3>Zumo de manzana</h3>
+                <p class = "precio" > 1,20 € </p>
+                <button class="btn-agregar" data-nombre="Zumo de manzana" data-precio="1.20">
+                    Añadir al carrito
+                </button>
+            </article>
+
+        </div>
+        <a href = "#top" class = "volver-inicio"> Volver al inicio </a>
+
+     </section>
+
+     <!-- HIGIENE -->
+     <section id = "higiene" class = "categoria">
+        <h2> 
+            <img src="imagenes/iconos/higiene.svg" alt="Higiene" class="icono-categoria">
+            Higiene 
+        </h2>
+
+        <div class="video-container">
+            <video src="imagenes/HIGIENE.mp4" autoplay muted loop playsinline> </video>
+        </div>
+
+         <div class = "productos-grid"> 
+
+            <article class = "producto">
+                <img src = "imagenes/productos/higiene.png" alt = "Cepillo ecologico">
+                <h3> Cepillo ecológico </h3>
+                <p class = "precio" > 0,90 € </p>
+                <button class="btn-agregar" data-nombre="Cepillo ecológico" data-precio="0.90">
+                    Añadir al carrito
+                </button>
+            </article>
+
+            <article class = "producto">
+                <img src = "imagenes/productos/higiene2.png" alt = "Gel">
+                <h3> Gel de ducha Vainilla & Raspberry </h3>
+                <p class = "precio" > 2,30 € </p>
+                <button class="btn-agregar" data-nombre="Gel de ducha Vainilla & Raspberry" data-precio="2.30">
+                    Añadir al carrito
+                </button>
+            </article>
+
+             <article class = "producto">
+                <img src = "imagenes/productos/higiene3.png" alt = "Pasta de dientes">
+                <h3> Pasta de dientes </h3>
+                <p class = "precio" > 2,90 € </p>
+                <button class="btn-agregar" data-nombre="Pasta de dientes" data-precio="2.90">
+                    Añadir al carrito
+                </button>
+            </article>
+
+             <article class = "producto">
+                <img src = "imagenes/productos/higiene4.png" alt = "Champu">
+                <h3> Champú vegano </h3>
+                <p class = "precio" > 2,60 € </p>
+                <button class="btn-agregar" data-nombre="Champú veganos" data-precio="2.60">
+                    Añadir al carrito
+                </button>
+            </article>
+
+            <article class = "producto">
+                <img src = "imagenes/productos/higiene5.png" alt = "Jabon">
+                <h3> Jabón sólido </h3>
+                <p class = "precio" > 1,70 € </p>
+                <button class="btn-agregar" data-nombre="Jabón sólido" data-precio="1.70">
+                    Añadir al carrito
+                </button>
+            </article>
+
+         </div>
+          <a href = "#top" class = "volver-inicio"> Volver al inicio </a>
+
+    </section>
+
+    <!-- COSMÉTICA --> 
+     <section id = "cosmetica" class = "categoria">
+        <h2> 
+            <img src="imagenes/iconos/cosmetica.svg" alt="Cosmética" class="icono-categoria">
+            Cosmética 
+        </h2>
+
+        <div class="video-container">
+            <video src="imagenes/cosmetica.mp4"  autoplay muted loop playsinline> </video>
+        </div>
+
+         <div class = "productos-grid"> 
+
+            <article class = "producto">
+                <img src = "imagenes/productos/cosmetica1.png" alt = "Vitamina C">
+                <h3> Sérum Vitamina C </h3>
+                <p class = "precio" > 4,90 € </p>
+                <button class="btn-agregar" data-nombre="Sérum Vitamina C" data-precio="4.90">
+                    Añadir al carrito
+                </button>
+            </article>
+
+            <article class = "producto">
+                <img src = "imagenes/productos/cosmetica2.png" alt = "Contorno ojos">
+                <h3> Contorno de ojos </h3>
+                <p class = "precio" > 5,50 € </p>
+                <button class="btn-agregar" data-nombre="Contorno de ojos" data-precio="5.50">
+                    Añadir al carrito
+                </button>
+            </article>
+
+             <article class = "producto">
+                <img src = "imagenes/productos/cosmetica3.png" alt = "Hidratante">
+                <h3> Crema hidratante facial </h3>
+                <p class = "precio" > 3,90 € </p>
+                <button class="btn-agregar" data-nombre="Crema hidratante facial" data-precio="3.90">
+                    Añadir al carrito
+                </button>
+            </article>
+
+             <article class = "producto">
+                <img src = "imagenes/productos/cosmetica4.png" alt = "Hidratante cuerpo">
+                <h3> Crema hidratante corporal </h3>
+                <p class = "precio" > 3,60 € </p>
+                <button class="btn-agregar" data-nombre="Crema hidratante corporal" data-precio="3.60">
+                    Añadir al carrito
+                </button>
+            </article>
+
+            <article class = "producto">
+                <img src = "imagenes/productos/cosmetica5.png" alt = "Labial">
+                <h3> Bálsamo de labios </h3>
+                <p class = "precio" > 1,30 € </p>
+                <button class="btn-agregar" data-nombre="Bálsamo de labios" data-precio="1.30">
+                    Añadir al carrito
+                </button>
+            </article>
+
+         </div>
+         <a href = "#top" class = "volver-inicio"> Volver al inicio </a>
+
+    </section>
+
+    <section>
+        <div class="video-container">
+            <video src = "imagenes/datos contacto.mp4"  autoplay muted loop playsinline> </video>
+        </div>
+        
+        <img src = "imagenes/logo.png" alt = "Logo Super verde" class = "logo" loading = "lazy">
+    </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id = "contacto">
+        <section class="contacto">
+        <p><strong>Super Verde</strong></p>
+        <p>
+            <img src="imagenes/iconos/mail.svg" alt="Email" class="icono-categoria-mini">
+            Email: contacto@superverde.es</p>
+        <p>
+            <img src="imagenes/iconos/telefono.svg" alt="Móvil" class="icono-categoria-mini">
+            Teléfono: 950 123 456</p>
+        <p>&copy; 2025 Super Verde</p>
+
+        <a href = "#top" class = "volver-inicio"> Volver al inicio </a>
+        </section>    
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
