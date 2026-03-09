@@ -40,5 +40,4 @@ Proyecto desarrollado como práctica para aplicar conceptos de:
 * desarrollo de aplicaciones web
 
 ## 👩‍💻 Autora
-
 Aurora Aviz
