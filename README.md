@@ -5,7 +5,7 @@ Simula la gestión de un **supermercado vegano**, permitiendo visualizar product
 
 ## 🌐 Vista previa
 
-![Vista previa de la web](auroraaviz.github.io_superverde_SupermercadoVegano_ (1).png)
+![Vista previa de la web](auroraaviz.github.io_superverde_SupermercadoVegano.png)
 
 ## 📁 Estructura del proyecto
 - `src/` → Código fuente del proyecto
